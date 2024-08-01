@@ -1,5 +1,4 @@
 # 32-bit-Signed-Vedic-Multiplier
-A 32-bit Signed Vedic Multiplier created using Verilog HDL utilising Vedic Mathematic Sutras formed using Carry Lookahead Adders as the basic building blocks.
 
 <br>
 
