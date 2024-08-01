@@ -48,6 +48,31 @@ To build our 32bit VM we require 4 x (16bit VM's) and 3 x (32bit full Adders). I
 **Unsigned Multiplier:** There is no sign bit, and all bits contribute to the magnitude of the number and are treated as positive. For N-bit operands, the result will be a 2N-bit number, ranging from 0 to (2n−1)^2. <br>
 **Signed Multiplier:** The MSB is the sign bit (0 - Positive and 1 - Negative), operands can be both negative as well as positive or the mixture of each other. The result can be of either nature, for N-bit operands, it will be a 2N-bit number, ranging from −2^(2N−2) to 2^(2N−2)−1. 
 
+### Logic for converting an Unsigned Multiplier to a Signed Multiplier
+
+We all know how to perform the basic multiplication. The logic behind the signed multiplier's circuit functionality remains the same but, we need to devise some logic as to when to obtain the negative output. <br><br>
+For this we can use the following method: <br>
+1. Consider just the input's magnitude (Lets say we have, -2 and 3. Consider -2 as 2). <br>
+2. Multiply the magnitudes (2 x 3 = 6 ). <br>
+3. Negate if needed (since we had a -2 , hence we'll negate the product obtained. 6 to -6).
+<br><br>
+
+![image](https://github.com/user-attachments/assets/840c8fce-8cfd-4ea7-a789-5302a6f304f7) <br> Fig 3: Possible combinations for two signed numbers. <br> <br>
+
+This Logic is similar to the functionality of an Exclusive OR (Ex-OR) gate. <br><br>
+
+![image](https://github.com/user-attachments/assets/c4a1b282-48fc-46eb-a558-2c47ad475771) <br> Fig 4: Ex-OR gate Truth Table. <br> <br>
+
+Hence, we can consider the following Block Diagram representation for the Signed Multiplier functionality: <br>
+
+---------------------------------------
+We follow all the steps previously discussed above to form the logic of Signed Multiplier functionality. <br>
+1. The MSB bit of the operand governs whether we need to negate the input or not and is directly connected to the complement enable signal (0 - Positive and 1 - Negative). <br>
+2. Unsigned Multiplier block performs the Unsigned Multiplication on the operands. <br>
+3. We take the Ex-OR of both the signed bits to decide whether the negation of the output is required or not to obtain the final result. <br>
+
+
+
 
 
 
