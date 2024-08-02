@@ -75,6 +75,8 @@ We follow all the steps previously discussed above to form the logic of Signed M
 ![Screenshot 2024-08-03 004134](https://github.com/user-attachments/assets/efa9f771-1985-4b37-b8f1-9b3936d8e884) <br> Fig 6: Elaborated RTL Schematic. <br> <br>
 ![Screenshot 2024-08-03 004311](https://github.com/user-attachments/assets/893c72ac-ccca-4c3b-ac5d-a3c13bb63735) <br> Fig 6: Simulation Waveform. <br> <br>
 
+**NOTE: All coding and simulations are performed in Vivado Design suite 2020.2 edition.**
+
 
 
 
