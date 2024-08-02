@@ -69,7 +69,15 @@ Hence, we can consider the following Block Diagram representation for the Signed
 We follow all the steps previously discussed above to form the logic of Signed Multiplier functionality. <br>
 1. The MSB bit of the operand governs whether we need to negate the input or not and is directly connected to the 2's complement enable signal (0 - Positive and 1 - Negative). <br>
 2. Unsigned Multiplier block performs the Unsigned Multiplication on the operands. <br>
-3. We take the Ex-OR of both the signed bits to decide whether the negation of the output is required or not to obtain the final result. <br>
+3. We take the Ex-OR of both the signed bits to decide whether the negation of the output is required or not to obtain the final result. <br><br>
+
+### Elaborated RTL Schematic and Simulation Waveform
+![Screenshot 2024-08-03 004134](https://github.com/user-attachments/assets/efa9f771-1985-4b37-b8f1-9b3936d8e884) <br> Fig 6: Elaborated RTL Schematic. <br> <br>
+![Screenshot 2024-08-03 004311](https://github.com/user-attachments/assets/893c72ac-ccca-4c3b-ac5d-a3c13bb63735) <br> Fig 6: Simulation Waveform. <br> <br>
+
+
+
+
 
 
 
