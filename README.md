@@ -63,11 +63,11 @@ This Logic is similar to the functionality of an Exclusive OR (Ex-OR) gate. <br>
 
 ![image](https://github.com/user-attachments/assets/c4a1b282-48fc-46eb-a558-2c47ad475771) <br> Fig 4: Ex-OR gate Truth Table. <br> <br>
 
-Hence, we can consider the following Block Diagram representation for the Signed Multiplier functionality: <br>
+Hence, we can consider the following Block Diagram representation for the Signed Multiplier functionality: <br><br>
+![image](https://github.com/user-attachments/assets/a6824f20-568d-4e07-8986-79203f718471) <br> Fig 5: Signed Multiplication Logic - Block Diagram. <br> <br>
 
----------------------------------------
 We follow all the steps previously discussed above to form the logic of Signed Multiplier functionality. <br>
-1. The MSB bit of the operand governs whether we need to negate the input or not and is directly connected to the complement enable signal (0 - Positive and 1 - Negative). <br>
+1. The MSB bit of the operand governs whether we need to negate the input or not and is directly connected to the 2's complement enable signal (0 - Positive and 1 - Negative). <br>
 2. Unsigned Multiplier block performs the Unsigned Multiplication on the operands. <br>
 3. We take the Ex-OR of both the signed bits to decide whether the negation of the output is required or not to obtain the final result. <br>
 
